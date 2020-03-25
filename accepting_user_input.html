@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Accepting User Input</title>
+</head>
+<body>
+  <h1>Your input:</h1>
+  <h3 id="customInput">_______</h3>
+
+
+  <script>
+
+  var input = prompt("Enter: ");
+  var h3Node = document.getElementById("customInput");
+  // Appends the value from "input" into "h3Node"
+  h3Node.innerText = input;
+  </script>
+</body>
+</html>

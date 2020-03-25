@@ -3,9 +3,28 @@
   <title>String Manipulation</title>
 </head>
 <body>
-
+<h1 id= "sentence">Hello world! Today is a beautiful day!</h1>
 
   <script>
+  var sentenceNode = document.getElementById("sentence");
+  // Retrieves all the text from the "sentenceNode" variable
+  var sentence = sentenceNode.innerText;
+
+  // Converts the data in the "sentence" variable to upper case
+  var upperSentence = sentence.toUpperCase()
+
+  // Outputs the first 5 characters of the String
+  var first5 = sentence.substr(5)
+
+  
+
+  console.log("Sentence: ", sentence)
+  // Outputs the data type of "sentence" to the console log
+  console.log("Sentence type:", typeof(sentence))
+
+  console.log(upperSentence)
+
+  console.log(first5)
 
 
   </script>
