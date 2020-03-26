@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>URL</title>
+</head>
+<body>
+<h1 id = "head">URL Link</h1>
+<strong id = "link"></strong>
+
+  <script>
+  var link = document.getElementById("link")
+  //Ask the user for a URL
+  var url = prompt("Enter a URL link")
+
+  // Check if the link begins with "http"
+  if (url == null){
+    console.error("Input missing!")
+
+  }
+  else{
+    if (url.substr(0, 4) == "http"){
+      console.log("The URL is good")
+    }
+    console.warn("Incorrect URL; 'http' missing!")
+    url = "http://" + url;
+
+  }
+
+  // If it doesn't start with http, fix the Variables
+  // Inject the HTTP link into your page using .innerHTML
+  link.innerHTML = "<a href= ''"+ url + "'>" + url + "</a>";
+  </script>
+</body>
+</html>

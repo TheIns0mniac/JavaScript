@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Opposite Operators</title>
+</head>
+<body>
+  <h1 id="text"></h1>
+
+
+  <script>
+
+  var input = prompt("What course are you taking?: ")
+  var inputLower = input.toLowerCase()
+  var text = document.getElementById("text")
+  if (inputLower == "javascript for beginners"){
+    text.innerHTML = "<strong>WELCOME</strong> to Javascript for <strong>Beginners</strong>";
+    console.log(inputLower, " was submitted")
+  }
+  else{
+    text.innerHTML = "Hello!";
+    console.log(inputLower, " was submitted")
+
+  }
+  </script>
+</body>
+</html>

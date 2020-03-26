@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Comparison Operators</title>
+</head>
+<body>
+  <h1>Your input:</h1>
+  <h3 id="customInput">_______</h3>
+
+
+  <script>
+
+  var input = prompt("Enter: ");
+  var h3Node = document.getElementById("customInput");
+  // Assesses the value of "input"
+  if (input == "Johan"){
+    alert("You have the same name as me!")
+  }
+  h3Node.innerText = input;
+  </script>
+</body>
+</html>
